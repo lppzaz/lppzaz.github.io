@@ -11,7 +11,48 @@ body {
 h1,h6  {
   text-align: center;
 }
+.logo {
+  font: 84px 'Arial Narrow', sans-serif;/* I picked this font because it's the closest looking 'web safe' font http://cssfontstack.com/ */
+  color: #fefefe;
+  text-transform: uppercase;
+  letter-spacing: -4px;
+  background-color: #282828
 
+}
+
+/* stuff for both words */
+.logo span {
+  position: relative;
+}
+.logo span:before,
+.logo span:after {
+  content: '';
+  position: absolute;
+  border-width: 32px;/* makes a nice, big 64px square */
+  border-style: solid;
+  border-color: transparent;
+  height: 0;
+  z-index: -10;
+}
+
+
+.logo .word1 {
+  color: #C42D2D;
+  margin-right: -38px;
+  transform: rotateY(180deg);/* using Prefix free */
+  display: inline-block;/* required for transform */
+  z-index: 10;
+}
+
+
+
+.logo1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  float: left;
+  margin: 0;
+}
 h5 {
   float: left;
   border-bottom: 2px solid red;
@@ -19,9 +60,7 @@ h5 {
   box-shadow: 4px 4px 5px #000;
 }
 
-img {
-  margin-left: 110px;
-}
+
 
 p {
   font-size: auto;
@@ -32,31 +71,45 @@ p {
   flex-wrap: wrap;
   justify-content: center;
 }
+.cobus{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
 
-div.logo img {
-  width: 50px;
-  float: left;
+}
+div.logo1 img {
+
+  width: 75px;
+  height: 55px;
+
 }
 
 div.containerd img {
   width: 300px;
   height: 200px;
   margin: 15px;
-  transition: all 3.5s;
+  transition: all 1s;
   padding: 5px;
   border-radius: 15px;
 }
 
 div.containerd img:hover {
-  transform: scale(2);
+  transform: scale(1.5);
 }
 ul {
   list-style-type: none;
-  float: right;
-  margin-right: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 10;
+
 }
 li{
 text-decoration: none;
+margin: 10px;
+background-color: #00E6FB;
 }
 .containerd2 {
   display: flex;
@@ -68,13 +121,13 @@ div.containerd2 img {
   width: 70px;
   height: 40px;
   margin: 15px;
-  transition: all 1s;
+  transition: all 0.5s;
   padding: 5px;
   border-radius: 25px;
 }
 
 div.containerd2 img:hover {
-  transform: scale(3);
+  transform: scale(0.5);
 }
 a:link    {
   /* Applies to all unvisited links */
@@ -94,19 +147,25 @@ a:hover   {
   /* Applies to links under the pointer */
   text-decoration:  underline;
   font-weight:      bold;
-  background-color: blue;
-  color:            #fff;
+  background-color: none;
+  color:            #00E6FB;
   }
 a:active  {
   /* Applies to activated links */
   text-decoration:  underline;
   font-weight:      bold;
-  background-color: 04AFD7;
+  background-color: #00E6FB;
   color: white;
   }
 
   @media only screen and (max-width: 600px) {
       ul {
           display: none;
+      }
+      div.containerd img:hover {
+        transform: none;
+      }
+      div.containerd2 img:hover {
+        transform: none;
       }
   }
