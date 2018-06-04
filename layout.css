@@ -158,14 +158,27 @@ a:active  {
   color: white;
   }
 
+
   @media only screen and (max-width: 600px) {
       ul {
-          display: none;
+      font: 3px;
+
+      }
+      li{
+              background-color: #6495ed
       }
       div.containerd img:hover {
         transform: none;
       }
       div.containerd2 img:hover {
         transform: none;
+      }
+      .logo {
+        font: 50px 'Arial Narrow', sans-serif;/* I picked this font because it's the closest looking 'web safe' font http://cssfontstack.com/ */
+        color: #fefefe;
+        text-transform: uppercase;
+        letter-spacing: -4px;
+        background-color: #282828
+
       }
   }
