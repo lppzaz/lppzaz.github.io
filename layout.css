@@ -1,0 +1,112 @@
+* {
+  font-family: 'Lato', Helvetica, sans-serif;
+  color: #fff;
+}
+
+body {
+  background-size: cover;
+  background: #6495ed;
+}
+
+h1,h6  {
+  text-align: center;
+}
+
+h5 {
+  float: left;
+  border-bottom: 2px solid red;
+  border-right: 2px solid red;
+  box-shadow: 4px 4px 5px #000;
+}
+
+img {
+  margin-left: 110px;
+}
+
+p {
+  font-size: auto;
+}
+
+.containerd {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div.logo img {
+  width: 50px;
+  float: left;
+}
+
+div.containerd img {
+  width: 300px;
+  height: 200px;
+  margin: 15px;
+  transition: all 3.5s;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+div.containerd img:hover {
+  transform: scale(2);
+}
+ul {
+  list-style-type: none;
+  float: right;
+  margin-right: 50px;
+}
+li{
+text-decoration: none;
+}
+.containerd2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div.containerd2 img {
+  width: 70px;
+  height: 40px;
+  margin: 15px;
+  transition: all 1s;
+  padding: 5px;
+  border-radius: 25px;
+}
+
+div.containerd2 img:hover {
+  transform: scale(3);
+}
+a:link    {
+  /* Applies to all unvisited links */
+  text-decoration:  none;
+  font-weight:      bold;
+  background-color: #6495ed;
+  color:            white;
+  }
+a:visited {
+  /* Applies to all visited links */
+  text-decoration:  none;
+  font-weight:      bold;
+  background-color: #6495ed;
+  color:            #C42D2D;
+  }
+a:hover   {
+  /* Applies to links under the pointer */
+  text-decoration:  underline;
+  font-weight:      bold;
+  background-color: blue;
+  color:            #fff;
+  }
+a:active  {
+  /* Applies to activated links */
+  text-decoration:  underline;
+  font-weight:      bold;
+  background-color: 04AFD7;
+  color: white;
+  }
+
+  @media only screen and (max-width: 600px) {
+      ul {
+          display: none;
+      }
+  }
