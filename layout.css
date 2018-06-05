@@ -1,6 +1,7 @@
 * {
   font-family: 'Lato', Helvetica, sans-serif;
   color: #fff;
+  margin-top: 15px;
 }
 
 body {
@@ -8,17 +9,102 @@ body {
   background: #6495ed;
 }
 
-h1,h6  {
+h1,h6 {
   text-align: center;
 }
+
+h5 {
+  float: left;
+  border-bottom: 2px solid red;
+  border-right: 2px solid red;
+  box-shadow: 4px 4px 5px #000;
+}
+h4{
+  margin-left: 220px;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 10;
+
+}
+li{
+text-decoration: none;
+margin: 10px;
+background-color: #00E6FB;
+}
+.containerd2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+p {
+  font-size: auto;
+  margin: 0px 220px 0px 220px;
+}
+
+.containerd {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cobus{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+
+}
+div.logo1 img {
+
+  width: 75px;
+  height: 55px;
+
+}
+hr.style-one {
+  border:none;
+  height: 20px;
+  width: 30%;
+  height: 50px;
+  margin-top: 0;
+  border-bottom: 1px solid #1f1209;
+  box-shadow: 0 20px 20px -20px #333;
+  margin: -50px auto 10px; 
+}
+div.containerd img {
+  width: 175px;
+  height: 95px;
+  margin: 15px;
+  transition: all 1s;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+div.containerd img:hover {
+  transform: scale(1.5);
+}
+div.containerd2 img {
+  width: 70px;
+  height: 40px;
+  margin: 15px;
+  transition: all 0.5s;
+  padding: 5px;
+  border-radius: 25px;
+}
 .logo {
-  font: 84px 'Arial Narrow', sans-serif;/* I picked this font because it's the closest looking 'web safe' font http://cssfontstack.com/ */
+  font: 65px 'Arial Narrow', sans-serif;/* I picked this font because it's the closest looking 'web safe' font http://cssfontstack.com/ */
   color: #fefefe;
   text-transform: uppercase;
   letter-spacing: -4px;
   background-color: #282828
+  width: 50%;
 
 }
+
 
 /* stuff for both words */
 .logo span {
@@ -53,79 +139,6 @@ h1,h6  {
   float: left;
   margin: 0;
 }
-h5 {
-  float: left;
-  border-bottom: 2px solid red;
-  border-right: 2px solid red;
-  box-shadow: 4px 4px 5px #000;
-}
-
-
-
-p {
-  font-size: auto;
-}
-
-.containerd {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.cobus{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0;
-  width: 100%;
-
-}
-div.logo1 img {
-
-  width: 75px;
-  height: 55px;
-
-}
-
-div.containerd img {
-  width: 300px;
-  height: 200px;
-  margin: 15px;
-  transition: all 1s;
-  padding: 5px;
-  border-radius: 15px;
-}
-
-div.containerd img:hover {
-  transform: scale(1.5);
-}
-ul {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  margin: 10;
-
-}
-li{
-text-decoration: none;
-margin: 10px;
-background-color: #00E6FB;
-}
-.containerd2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-div.containerd2 img {
-  width: 70px;
-  height: 40px;
-  margin: 15px;
-  transition: all 0.5s;
-  padding: 5px;
-  border-radius: 25px;
-}
-
 div.containerd2 img:hover {
   transform: scale(0.5);
 }
@@ -159,7 +172,7 @@ a:active  {
   }
 
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
       ul {
       font: 3px;
 
@@ -181,4 +194,12 @@ a:active  {
         background-color: #282828
 
       }
+      p {
+  
+  margin: 0;
+}
+h4 {
+  
+  margin: 0;
+}
   }
