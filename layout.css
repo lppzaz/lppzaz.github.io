@@ -96,7 +96,7 @@ div.containerd2 img {
   border-radius: 25px;
 }
 .logo {
-  font: 65px 'Arial Narrow', sans-serif;/* I picked this font because it's the closest looking 'web safe' font http://cssfontstack.com/ */
+  font: 65px 'Arial Narrow', sans-serif;
   color: #fefefe;
   text-transform: uppercase;
   letter-spacing: -4px;
@@ -168,7 +168,7 @@ a:active  {
   /* Applies to activated links */
   text-decoration:  underline;
   font-weight:      bold;
-  background-color: #00E6FB;
+  background-color: #6495ed;
   color: white;
   }
 
