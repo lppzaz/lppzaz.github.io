@@ -73,7 +73,7 @@ hr.style-one {
   margin-top: 0;
   border-bottom: 1px solid #1f1209;
   box-shadow: 0 20px 20px -20px #333;
-  margin: -50px auto 10px; 
+  margin: -50px auto 10px;
 }
 div.containerd img {
   width: 175px;
@@ -100,8 +100,9 @@ div.containerd2 img {
   color: #fefefe;
   text-transform: uppercase;
   letter-spacing: -4px;
-  background-color: #282828
-  width: 50%;
+  background-color: #6495ed;
+
+
 
 }
 
@@ -191,15 +192,15 @@ a:active  {
         color: #fefefe;
         text-transform: uppercase;
         letter-spacing: -4px;
-        background-color: #282828
+        background-color: #6495ed;
 
       }
       p {
-  
+
   margin: 0;
 }
 h4 {
-  
+
   margin: 0;
 }
   }
