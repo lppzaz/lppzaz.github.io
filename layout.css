@@ -27,13 +27,16 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  margin: 10;
+  margin: 1;
+
 
 }
 li{
 text-decoration: none;
-margin: 10px;
-background-color: #00E6FB;
+margin: 2px;
+text-decoration-color: red;
+
+
 }
 .containerd2 {
   display: flex;
@@ -147,8 +150,16 @@ a:link    {
   /* Applies to all unvisited links */
   text-decoration:  none;
   font-weight:      bold;
-  background-color: #6495ed;
+  background-color: none;
   color:            white;
+  }
+  li:hover {
+    text-decoration:  underline overline;
+    font-weight:      bold;
+    background-color: #C42D2D;
+    color:            white;
+    transform: scale(0.8);
+    transition-duration: 3s;
   }
 
 
