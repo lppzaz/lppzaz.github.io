@@ -44,10 +44,6 @@ li:hover {
   transform: scale(0.8);
   transition-duration: 3s;
 }
-
-
-
-
 #menu-icon {
   display: hidden;
   width: 40px;
@@ -132,7 +128,7 @@ div.containerd2 img {
   padding: 5px;
   border-radius: 25px;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 650px) {
   hr.style-one {
     border: none;
     height: 20px;
@@ -143,8 +139,11 @@ div.containerd2 img {
     box-shadow: 0 20px 20px -20px #333;
     margin: -50px auto 10px;
   }
-  .logo .word1 {
-  font-size: auto;
+span.word1{
+  font-size: 50px;
+}
+span.word2{
+  font-size: 50px;
 }
   #menu-icon {
     display: inline-block;
@@ -170,5 +169,6 @@ div.containerd2 img {
   nav:hover ul {
     display: block;
   }
-  p{margin:0;}
+  p{margin:0;
+  }
 }
