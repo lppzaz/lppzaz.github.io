@@ -2,6 +2,7 @@
   font-family: 'Lato', Helvetica, sans-serif;
   color: #fff;
   margin-top: 15px;
+  font-size: 100%;
 }
 
 body {
@@ -9,35 +10,37 @@ body {
   background: #6495ed;
 }
 
-h1,h6 {
+h1, h6, h4 h5 {
   text-align: center;
+  font: 1.125em;
 }
 
 h5 {
+  font: 1.125em;
   float: left;
   border-bottom: 2px solid red;
   border-right: 2px solid red;
   box-shadow: 4px 4px 5px #000;
 }
-h4{
+
+h4 {
   margin-left: 220px;
 }
+
 ul {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   margin: 1;
-
-
 }
-li{
-text-decoration: none;
-margin: 2px;
-text-decoration-color: red;
 
-
+li {
+  text-decoration: none;
+  margin: 2px;
+  text-decoration-color: red;
 }
+
 .containerd2 {
   display: flex;
   flex-wrap: wrap;
@@ -54,22 +57,22 @@ p {
   flex-wrap: wrap;
   justify-content: center;
 }
-.cobus{
+
+.cobus {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0;
   width: 100%;
-
 }
-div.logo1 img {
 
+div.logo1 img {
   width: 75px;
   height: 55px;
-
 }
+
 hr.style-one {
-  border:none;
+  border: none;
   height: 20px;
   width: 30%;
   height: 50px;
@@ -78,6 +81,7 @@ hr.style-one {
   box-shadow: 0 20px 20px -20px #333;
   margin: -50px auto 10px;
 }
+
 div.containerd img {
   width: 175px;
   height: 95px;
@@ -90,6 +94,7 @@ div.containerd img {
 div.containerd img:hover {
   transform: scale(1.5);
 }
+
 div.containerd2 img {
   width: 70px;
   height: 40px;
@@ -98,144 +103,160 @@ div.containerd2 img {
   padding: 5px;
   border-radius: 25px;
 }
+
 .logo {
   font: 65px 'Arial Narrow', sans-serif;
   color: #fefefe;
   text-transform: uppercase;
   letter-spacing: -4px;
   background-color: #6495ed;
-
-
-
 }
 
-
 /* stuff for both words */
+
 .logo span {
   position: relative;
 }
-.logo span:before,
-.logo span:after {
+
+.logo span:before, .logo span:after {
   content: '';
   position: absolute;
-  border-width: 32px;/* makes a nice, big 64px square */
+  border-width: 32px;
+  /* makes a nice, big 64px square */
   border-style: solid;
   border-color: transparent;
   height: 0;
   z-index: -10;
 }
 
-
 .logo .word1 {
   color: #C42D2D;
   margin-right: -38px;
-  transform: rotateY(180deg);/* using Prefix free */
-  display: inline-block;/* required for transform */
+  transform: rotateY(180deg);
+  /* using Prefix free */
+  display: inline-block;
+  /* required for transform */
   z-index: 10;
 }
 
-
-
-.logo1{
+.logo1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   float: left;
   margin: 0;
 }
+
 div.containerd2 img:hover {
   transform: scale(0.5);
 }
-a:link    {
+
+a:link {
   /* Applies to all unvisited links */
-  text-decoration:  none;
-  font-weight:      bold;
+  text-decoration: none;
+  font-weight: bold;
   background-color: none;
-  color:            white;
+  color: white;
+}
+
+li:hover {
+  text-decoration: underline overline;
+  font-weight: bold;
+  background-color: #C42D2D;
+  color: white;
+  transform: scale(0.8);
+  transition-duration: 3s;
+}
+
+#menu-icon {
+  display: hidden;
+  width: 40px;
+  height: 40px;
+  background-image: url("menu-icon.png");
+}
+/* media query to make sure displays nice on mobile devices */
+@media only screen and (max-width: 768px) {
+  div.logo1{
+    width:85%
   }
-  li:hover {
-    text-decoration:  underline overline;
-    font-weight:      bold;
-    background-color: #C42D2D;
-    color:            white;
-    transform: scale(0.8);
-    transition-duration: 3s;
+  div.logo1 img {
+    width: 55px;
+    height: 45px;
+  }
+  h1, h6, h4, h5{
+    text-align: center;
+    font: 0.5em arial;
+  }
+h5{
+  float: right;
+}
+  ul {
+    font: 3px;
+  }
+  li {
+    background-color: #6495ed
+  }
+  hr.style-one {
+    border: none;
+    height: 20px;
+    width: 100%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 20px -20px #333;
+    margin: -50px auto 10px;
+  }
+
+  div.flexd img {
+    width:50px;
+    height: 50px;
+    margin: none;;
+    transition: none;
+    padding: none;
+    border-radius: 15px;
+  }
+
+  div.containerd2 img:hover {
+    transform: none;
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    transition: all 0.5s;
+    padding: 5px;
+    border-radius: 25px;
   }
 
   #menu-icon {
-
-  	display: hidden;
-  	width: 40px;
-  	height: 40px;
-  	background-image: url("menu-icon.png");
+    display: inline-block;
   }
-
-
-  @media only screen and (max-width: 768px) {
-      ul {
-      font: 3px;
-
-      }
-      li{
-              background-color: #6495ed
-      }
-      div.containerd img:hover {
-        transform: none;
-      }
-      div.containerd2 img:hover {
-        transform: none;
-      }
-      .logo {
-        font: 50px 'Arial Narrow', sans-serif;/* I picked this font because it's the closest looking 'web safe' font http://cssfontstack.com/ */
-        color: #fefefe;
-        text-transform: uppercase;
-        letter-spacing: -4px;
-        background-color: #6495ed;
-
-      }
-      #menu-icon {
-
-    		display:inline-block;
-        float: right;
-
-
-
-    	}
-
-    	nav ul, nav:active ul {
-
-    		display: none;
-    		position: absolute;
-    		padding: 20px;
-    		background: #fff;
-    		border: 5px solid #444;
-    		right: 20px;
-    		top: 60px;
-    		width: 50%;
-    		border-radius: 4px 0 4px 4px;
-
-    	}
-
-    	nav li {
-
-    		text-align: center;
-    		width: 100%;
-    		padding: 10px 0;
-    		margin: 0;
-
-    	}
-
-    	nav:hover ul {
-
-    		display: block;
-
-    	}
-      p {
-
-  margin: 0;
-}
-h4 {
-
-  margin: 0;
-}
+  nav ul, nav:active ul {
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background: #fff;
+    border: 5px solid #444;
+    right: 20px;
+    top: 60px;
+    width: 50%;
+    border-radius: 4px 0 4px 4px;
   }
+  nav li {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+  }
+  nav:hover ul {
+    display: block;
+  }
+  p {
+    margin: 20px;
+    font-size: 10px;
+  }
+  h4 {
+    margin: 0;
+  }
+  .logo1 h5 {
+    float: right;
+  }
+}
