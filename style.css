@@ -90,6 +90,8 @@ li:hover {
   border: 2px solid black;
   margin: 10px;
   background-color: red;
+  width: 200px;
+
 }
 .containerd2 {
   display: flex;
@@ -113,7 +115,7 @@ hr.style-one {
   margin: -50px auto 10px;
 }
 div.containerd img:hover {
-  transform: scale(1.5);
+  transform: scale(2.5);
 }
 div.containerd img {
   display: flex;
@@ -137,6 +139,14 @@ div.containerd2 img {
   border-radius: 25px;
 }
 @media only screen and (max-width: 650px) {
+  .flexd{
+    border: 2px solid black;
+    margin: 10px;
+    background-color: red;
+    width: 300px;
+
+  }
+
   hr.style-one {
     border: none;
     height: 20px;
