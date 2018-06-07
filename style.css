@@ -8,8 +8,9 @@ body {
   background-size: cover;
   background: #6495ed;
 }
+
 div.logo1 img {
-  width: 40%;
+  width: 30%;
   float: left;
   margin: 0;
 }
@@ -58,6 +59,7 @@ li:hover {
   background-color: #6495ed;
   text-align: center;
 }
+
 .logo .word1 {
   color: #C42D2D;
   margin-right: -38px;
@@ -72,8 +74,11 @@ li:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0;
+  margin: 15px;
   width: 100%;
+}
+.cobus img{
+  width: 9em;
 }
 .containerd {
   display: flex;
@@ -171,6 +176,11 @@ span.word2{
   }
 .show, nav:active {
     display: block;
+  }
+  div.logo1 img {
+    width: 80%;
+    float: left;
+    margin: 0;
   }
 
 }
