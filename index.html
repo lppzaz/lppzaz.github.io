@@ -4,7 +4,7 @@
   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="HandheldFriendly" content="true">
@@ -14,21 +14,24 @@
 <link rel="icon" href="https://image.ibb.co/nLoxNS/flaviconn.png">
 
 <body>
-  <nav id="main_nav">
 
-    <a href="#" id="menu-icon"></a>
 
-    <ul class="top">
+    <nav>
 
-      <li class="top"><a href="https://www.linkedin.com/in/cobus-pienaar-88a581131/" target="_blank">About</a></li>
-      <li class="top"><a href="https://github.com/lppzaz?tab=repositories" >Portfolio</a></li>
-      <li class="top"><a href="https://www.fastcompany.com/3060883/why-coding-is-the-job-skill-of-the-future-for-everyone" target="_blank">Articles</a></li>
-      <li class="top"><a href="mailto:cobuspienaar@gmail.com">Contact</li>
+      <a href="#" onclick="toggleMenu()" id="menu-icon"></a>
+
+      <ul id="hidden-nav" class="">
+
+        <li><a href="https://www.linkedin.com/in/cobus-pienaar-88a581131/" target="_blank">About</a></li>
+        <li><a href="https://github.com/lppzaz?tab=repositories">Portfolio</a></li>
+        <li><a href="https://www.fastcompany.com/3060883/why-coding-is-the-job-skill-of-the-future-for-everyone" target="_blank">Articles</a></li>
+        <li><a href="mailto:cobuspienaar@gmail.com">Contact</li>
 
 
     </ul>
 
   </nav>
+
   <div class='logo1'>
     <img class='logo1' src="https://image.ibb.co/dJNNSo/logo_clipped_rev_1.png" >
 
@@ -60,15 +63,15 @@
 
       <a href="https://lppzaz.github.io/greetings/index.html" target="_blank">
         <img class="flexd"	src="https://shopify-customerio.s3.amazonaws.com/tools/image_attachment/image/custom_resized_f8a5915b-feaa-4d7f-8dad-71eb61811a3a.png"></a>
-        <a href="https://lppzaz.github.io/basic-webpage/index-simple-grid" target="_blank">
+          <a href="https://lppzaz.github.io/basic-webpage/index-simple-grid" target="_blank">
             <img class="flexd" src="https://preview.ibb.co/mFwHmc/grid.png"></a>
-            <a href="https://lppzaz.github.io/gh-pages/bootcamp-tests/" target="_blank">
+          <a href="https://lppzaz.github.io/gh-pages/bootcamp-tests/" target="_blank">
           <a href="https://ibb.co/dk3vxo"><img class="flexd"src="https://preview.ibb.co/iXGFxo/fixed.png"></a>
-                  <a href="https://lppzaz.github.io/dom-intro/test/" target="_blank">
+          <a href="https://lppzaz.github.io/dom-intro/test/" target="_blank">
                   <img class="flexd" src="https://preview.ibb.co/n0m7oT/dom_tests.png"></a>
-                  <a href="https://lppzaz.github.io/dom-intro/" target="_blank">
+          <a href="https://lppzaz.github.io/dom-intro/" target="_blank">
                   <img class="flexd"src="https://preview.ibb.co/f3smho/Dom_Excercise.png"></a>
-                  <a href="https://lppzaz.github.io/basic-webpage/index1" target="_blank">
+          <a href="https://lppzaz.github.io/basic-webpage/index1" target="_blank">
                       <img class="flexd" src="https://shopify-customerio.s3.amazonaws.com/tools/image_attachment/image/custom_resized_f7c6c640-a18e-48bb-a35e-f915de337aa3.png"></a>
   </div>
 
@@ -81,7 +84,12 @@
         <a href="https://github.com/lppzaz"target="_blank"><img src="https://image.ibb.co/hLHfbn/gitlink.jpg" alt="gitlink" border="0"></a>
         <a href="https://www.linkedin.com/in/cobus-pienaar-88a581131/"target="_blank"><img src="https://image.ibb.co/hyWZ2S/linkin.png" alt="linkin" border="0"></a>
   </div>
-
+<script>
+function toggleMenu() {
+  var hidden_menu = document.querySelector("#hidden-nav");
+  hidden_menu.classList.toggle('show');
+}
+</script>
   </body>
 </html>
 <h6>© 2018 JJP, Inc.</h6>

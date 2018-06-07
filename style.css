@@ -157,10 +157,10 @@ span.word2{
     display: none;
     position: absolute;
     padding: 20px;
-    background: #6495ed;
+    background: transparent;
     right: 20px;
     top: 60px;
-    width: 10%;
+    width: 25%;
     border-radius: 4px 0 4px 4px;
   }
   nav li {
@@ -169,10 +169,8 @@ span.word2{
     padding: 10px 0;
     margin: 0;
   }
-  nav:hover ul {
+.show {
     display: block;
   }
-  #main_nav:target {
-    display: block;
-}
+
 }
