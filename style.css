@@ -22,7 +22,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  margin: 1;
+  margin: 25px 5px 0px 5px;
 }
 
 li {
