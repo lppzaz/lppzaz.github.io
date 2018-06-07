@@ -91,9 +91,11 @@ li:hover {
   flex-wrap: wrap;
   justify-content: center;
 }
-p {
-  font-size: auto;
-  margin: 0px 220px 0px 220px;
+div.fix{
+  width:100%;
+  align-content: center;
+  word-spacing: 0.2em;
+
 }
 hr.style-one {
   border: none;
@@ -170,6 +172,7 @@ span.word2{
   nav:hover ul {
     display: block;
   }
-  p{margin:0;
-  }
+  #main_nav:target {
+    display: block;
+}
 }
