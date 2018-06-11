@@ -63,9 +63,7 @@ li:hover {
 
 .logo .word1 {
   color: #C42D2D;
-  margin-right: -38px;
-  transform: rotateY(180deg);
-  /* using Prefix free */
+  transform: rotateY(360deg);
   display: inline-block;
   /* required for transform */
   z-index: 10;
@@ -188,7 +186,7 @@ span.word2{
 .show, nav:active {
     display: block;
   }
-  div.logo1 img {
+.logo1{
     width: 80%;
     float: left;
     margin: 0;
