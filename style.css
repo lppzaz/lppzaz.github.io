@@ -10,8 +10,8 @@ body {
   background: #6495ed;
 }
 
-div.logo1 img {
-  width: 30%;
+.logo1 {
+  width: 35%;
   float: left;
   margin: 0;
 }
@@ -28,8 +28,9 @@ ul {
 
 li {
   text-decoration: none;
-  margin: 2px;
+  margin: 5px;
   text-decoration-color: red;
+  font-size: 15px;
 }
 a:link {
   /* Applies to all unvisited links */
