@@ -7,10 +7,8 @@
 }
 
 body {
-  background-size: cover;
-  background: #6495ed;
-  border: 2px solid lightblue;
-  box-shadow: 1px 1px 2px 1px black;
+  background-color: #4378D8;
+
 }
 .fixed{
   position: fixed;
@@ -172,9 +170,9 @@ div.containerd2 img {
   .fixed{
     position: fixed;
     display: block;
-    width: 96.5%;
+    width: auto;
     background-color: #1F5ED2;
-    height: 85px;
+    height: auto;
     align-content: center;
     padding: none;
   }
@@ -182,7 +180,7 @@ div.containerd2 img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top:35px;
+    margin-top:auto;
     width: 100%;
   }
   hr.style-one {
@@ -231,9 +229,10 @@ span.word2{
   }
   p{
     padding: none;
-    width: 435px;
+    width: auto;
     text-align: auto;
     margin:auto;
+    height: auto;
   }
 .logo1{
     width: 80%;
