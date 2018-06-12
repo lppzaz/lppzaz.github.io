@@ -171,7 +171,7 @@ div.containerd2 img {
   .fixed{
     position: fixed;
     display: block;
-    width: 365px;
+    width: 95.5%;
     background-color: #1F5ED2;
     height: 85px;
     align-content: center;
@@ -230,7 +230,7 @@ span.word2{
   }
   p{
     padding: none;
-    width: 350px;
+    width: 435px;
     text-align: auto;
     margin:auto;
   }
