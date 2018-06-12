@@ -20,6 +20,7 @@ body {
   height: 65px;
   align-content: center;
   padding: none;
+  box-shadow: 1px 1px 2px black, 0 0 5px darkblue;
 }
 p{
   text-shadow: 1px 1px 2px black, 0 0 5px darkblue;
@@ -171,7 +172,7 @@ div.containerd2 img {
   .fixed{
     position: fixed;
     display: block;
-    width: 95.5%;
+    width: 96.5%;
     background-color: #1F5ED2;
     height: 85px;
     align-content: center;
