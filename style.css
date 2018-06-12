@@ -3,16 +3,34 @@
   text-align: center;
   color: #FFF;
   text-shadow: 1px 1px 2px black, 0 0 5px darkblue;
+
 }
+
 body {
   background-size: cover;
   background: #6495ed;
+  border: 2px solid lightblue;
+  box-shadow: 1px 1px 2px 1px black;
+}
+.fixed{
+  position: fixed;
+  display: block;
+  width: 98.5%;
+  background-color: #1F5ED2;
+  height: 65px;
+  align-content: center;
+  padding: none;
+}
+p{
+  text-shadow: 1px 1px 2px black, 0 0 5px darkblue;
+  padding: 5px 100px 5px 100px;
 }
 
 .logo1 {
-  width: 35%;
+  width: 30%;
   float: left;
-  margin: 0;
+  margin-left: 0;
+  padding: 0;
 }
 h5{
   text-align: left;
@@ -22,12 +40,12 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  margin: 25px 5px 0px 5px;
+
 }
 
 li {
+  margin: 10px;
   text-decoration: none;
-  margin: 5px;
   text-decoration-color: red;
   font-size: 25px;
 }
@@ -65,8 +83,7 @@ li:hover {
   color: #C42D2D;
   transform: rotateY(360deg);
   display: inline-block;
-  /* required for transform */
-  z-index: 10;
+
 
 }
 .cobus {
@@ -83,19 +100,22 @@ li:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
 }
 
 .flexd{
-  border: 2px solid black;
   margin: 10px;
-  background-color: red;
-  width: 200px;
+  background-color: transparent;
+  width: 300px;
+  border: none;
+
 
 }
 .containerd2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
 }
 div.fix{
   width:100%;
@@ -137,30 +157,48 @@ div.containerd2 img {
   padding: 5px;
   border-radius: 25px;
 }
+
+
 @media only screen and (max-width: 650px) {
   .flexd{
-    border: 2px solid black;
     margin: 10px;
-    background-color: red;
+    background-color: transparent;
     width: 300px;
+    border: none;
+    text-shadow: 1px 1px 2px black, 0 0 5px darkblue;
 
   }
-
+  .fixed{
+    position: fixed;
+    display: block;
+    width: 365px;
+    background-color: #1F5ED2;
+    height: 85px;
+    align-content: center;
+    padding: none;
+  }
+  .cobus {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:35px;
+    width: 100%;
+  }
   hr.style-one {
     border: none;
     height: 20px;
     width: 100%;
     height: 50px;
     margin-top: 0;
-    border-bottom: 1px solid #1f1209;
+    border-bottom: 1px solid red;
     box-shadow: 0 20px 20px -20px #333;
     margin: -50px auto 10px;
   }
 span.word1{
-  font-size: 50px;
+  text-shadow: 1px 1px 2px black, 0 0 5px darkblue;
 }
 span.word2{
-  font-size: 50px;
+  text-shadow: 1px 1px 2px black, 0 0 5px darkblue;
 }
   #menu-icon {
     display: inline-block;
@@ -178,20 +216,29 @@ span.word2{
     float: left;
     border-bottom: 1px solid #1f1209;
     box-shadow: 0 20px 20px -20px #333;
+    text-shadow: 1px 1px 2px black, 0 0 5px darkblue;
   }
   nav li {
     text-align: center;
     width: 100%;
     padding: 10px 0;
     margin: 0;
+    z-index: 10;
   }
 .show, nav:active {
     display: block;
+  }
+  p{
+    padding: none;
+    width: 350px;
+    text-align: auto;
+    margin:auto;
   }
 .logo1{
     width: 80%;
     float: left;
     margin: 0;
+    text-shadow: 1px 1px 2px black, 0 0 5px darkblue;
   }
 
 }
