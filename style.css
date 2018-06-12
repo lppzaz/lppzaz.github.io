@@ -4,6 +4,7 @@
   color: #FFF;
   text-shadow: 1px 1px 2px black, 0 0 5px darkblue;
 
+
 }
 
 body {
@@ -19,6 +20,8 @@ body {
   align-content: center;
   padding: none;
   box-shadow: 1px 1px 2px black, 0 0 5px darkblue;
+  z-index: 10000;
+
 }
 p{
   text-shadow: 1px 1px 2px black, 0 0 5px darkblue;
@@ -71,9 +74,11 @@ li:hover {
 .logo {
   font-size: 4rem;
   text-transform: uppercase;
-  letter-spacing: -4px;
+  letter-spacing: -8px;
   background-color: #6495ed;
   text-align: center;
+  width: 100%;
+
 }
 
 .logo .word1 {
@@ -86,6 +91,7 @@ li:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 15px;
   width: 100%;
 }
 
@@ -93,6 +99,7 @@ li:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
 
 }
 
@@ -120,7 +127,6 @@ div.containerd img {
   flex-wrap: wrap;
   height: 11em;
   transition: all 0.5s;
-  padding: 5px;
   border-radius: 25px;
 }
 div.containerd2 img:hover {
@@ -146,6 +152,11 @@ div.containerd2 img {
     text-shadow: 1px 1px 2px black, 0 0 5px darkblue;
 
   }
+
+  .logo{
+
+    width: 200px;
+  }
   .fixed{
     position: fixed;
     display: block;
@@ -160,12 +171,12 @@ div.containerd2 img {
     flex-wrap: wrap;
     justify-content: center;
     margin-top:auto;
-    width: 100%;
+
   }
   hr.style-one {
     border: none;
     height: 20px;
-    width: 100%;
+    width: 115%;
     height: 50px;
     margin-top: 0;
     border-bottom: 1px solid red;
@@ -173,9 +184,6 @@ div.containerd2 img {
     margin: -50px auto 10px;
   }
 
-h1{
-  width: 100%
-}
   #menu-icon {
     display: inline-block;
     float: right;
@@ -204,10 +212,7 @@ h1{
 .show, nav:active {
     display: block;
   }
-  p{
-    padding: 0px;
 
-  }
 .logo1{
     width: 80%;
     float: left;
