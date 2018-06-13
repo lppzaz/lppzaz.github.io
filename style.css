@@ -201,15 +201,11 @@ div.containerd2 img {
   }
   nav ul {
     display: none;
-    padding: 20px 20px 20px 20px;
+    padding: 15px;
     background: #012C46;
-    right: 20px;
-    top: 60px;
-    width: 80%;
+    width: 94.5%;
     border-radius: 4px 0 4px 4px;
     float: left;
-    border-bottom: 1px solid #1f1209;
-    box-shadow: 0 20px 20px -20px #333;
     text-shadow: 1px 1px 2px black, 0 0 5px darkblue;
   }
   nav li {
