@@ -144,6 +144,13 @@ div.containerd2 img {
   padding: 5px;
   border-radius: 25px;
 }
+
+.row {
+
+  padding: 10px;
+  margin: auto;
+  max-width: 700px;
+}
 .flexd{
   margin: 10px;
   background-color: transparent;
